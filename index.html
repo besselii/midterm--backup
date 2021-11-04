@@ -1,5 +1,27 @@
 <style>
 
+  @keyframes rightbottom{
+    0%{visibility: hidden;}
+    50%{visibility: visible;}
+    100%{visibility: hidden;}
+  }
+  
+  @keyframes righttop{
+    0%{visibility: hidden;}
+    50%{visibility: visible;}
+    100%{visibility: hidden;}
+    }
+    @keyframes leftbottom{
+      0%{visibility: hidden;}
+      50%{visibility: visible;}
+      100%{visibility: hidden;}
+    }
+  @keyframes lefttop{
+    0%{visibility: hidden;}
+    50%{visibility: visible;}
+    100%{visibility: hidden;}
+  }
+    
   body{
     background-color: #FEF9E7;
   }
@@ -45,22 +67,32 @@
     border-radius: 60%;
     }
   
-  .rightblink{ background-color: white;
+  .rightblink{ background-color: #D4AC0D;
     width: 40px;
     height: 40px;
     position: absolute;
     right: 60%;
     bottom: 33%;
-    border-radius: 0% 100% 51% 49% / 0% 0% 100% 100% 
+    border-radius: 0% 100% 51% 49% / 0% 0% 100% 100%;
+    visibility: hidden;
+    animation-name: rightbottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+    animation-delay: 1s;
     }
   
-  .rightblink1{ background-color: white;
+  .rightblink1{ background-color: #D4AC0D;
     width: 40px;
     height: 40px;
     position: absolute;
     right: 60%;
     bottom: 48%;
-    border-radius: 47% 53% 51% 49% / 100% 100% 0% 0% 
+    border-radius: 47% 53% 51% 49% / 100% 100% 0% 0%;
+    visibility: hidden;
+    animation-name: righttop; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
     }
   
   .lefteye{ background-color: #F1C40F;
@@ -72,22 +104,32 @@
     border-radius: 60%;
     }
   
-  .leftblink{ background-color: white;
+  .leftblink{ background-color: #D4AC0D;
     width: 40px;
     height: 40px;
     position: absolute;
     left: 60%;
     bottom: 33%;
-    border-radius: 0% 100% 51% 49% / 0% 0% 100% 100%
+    border-radius: 0% 100% 51% 49% / 0% 0% 100% 100%;
+    visibility: hidden;
+    animation-name: leftbottom; 
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
     }
   
-  .leftblink1{ background-color: white;
+  .leftblink1{ background-color: #D4AC0D;
     width: 40px;
     height: 40px;
     position: absolute;
     left: 60%;
     bottom: 48%;
-    border-radius: 47% 53% 51% 49% / 100% 100% 0% 0%
+    border-radius: 47% 53% 51% 49% / 100% 100% 0% 0%;
+    visibility: hidden;
+    animation-name: lefttop;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
     }
   
   .neck{ background-color: #9A7D0A;
